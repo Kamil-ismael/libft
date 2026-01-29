@@ -1,25 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: tkamil-h <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/01/22 12:00:02 by tkamil-h          #+#    #+#             */
-/*   Updated: 2026/01/27 15:51:25 by tkamil-h         ###   ########.fr       */
+/*   Created: 2026/01/27 15:55:38 by tkamil-h          #+#    #+#             */
+/*   Updated: 2026/01/29 14:07:16 by tkamil-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *s, int c, size_t n)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
-	unsigned char	*ptr;
+	unsigned char	*d;
+	unsigned char	*s;
 
-	ptr = (unsigned char *)s;
+	d = (unsigned char *)dest;
+	s = (unsigned char *)src;
 	while (n > 0)
 	{
-		*ptr = (unsigned char)c;
-		ptr++;
+		*d++ = *s++;
 		n--;
 	}
-	return (s);
+	d[n] = '\0';
+	return (dest);
 }
