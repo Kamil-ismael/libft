@@ -24,7 +24,8 @@ SRC     = ft_isdigit.c \
           ft_memcmp.c \
           ft_atoi.c \
           ft_calloc.c \
-          ft_strdup.c
+          ft_strdup.c \
+          ft_substr.c
 
 OBJ     = $(SRC:.c=.o)
 HEAD    = libft.h
