@@ -23,8 +23,8 @@ SRC     = ft_isdigit.c \
           ft_strncmp.c \
           ft_memcmp.c \
           ft_atoi.c \
-          ft_calloc \
-          ft_strdup
+          ft_calloc.c \
+          ft_strdup.c
 
 OBJ     = $(SRC:.c=.o)
 HEAD    = libft.h

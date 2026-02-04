@@ -18,7 +18,7 @@ static int	ft_isspace(char c)
 		|| c == '\f' || c == '\r' || c == ' ');
 }
 
-static int	ft_isdigit(int c)
+int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }
