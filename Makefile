@@ -28,7 +28,8 @@ SRC     = ft_isdigit.c \
           ft_substr.c \
           ft_strjoin.c \
           ft_strtrim.c \
-          ft_split.c
+          ft_split.c \
+          ft_itoa.c
 
 OBJ     = $(SRC:.c=.o)
 HEAD    = libft.h
