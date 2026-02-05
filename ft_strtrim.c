@@ -12,6 +12,20 @@
 
 #include "libft.h"
 
+static int	is_in_set(char c, const char *set)
+{
+	size_t	i;
+
+	i = 0;
+	while (set[i])
+	{
+		if (set[i] == c)
+			return (1);
+		i++;
+	}
+	return (0);
+}
+
 char	*ft_strtrim(char const *s1, char const *set)
 {
 	char	*str;
@@ -22,18 +36,16 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (!s1 || !set)
 		return (NULL);
 	start = 0;
-	while (s1[start] && ft_strchr(set, s1[start]))
+	while (s1[start] && is_in_set(s1[start], set))
 		start++;
-	if (s1[start] == '\0')
-		return (ft_strdup(""));
 	end = ft_strlen(s1) - 1;
-	while (end > start && ft_strchr(set, s1[end]))
+	while (end > start && is_in_set(s1[end], set))
 		end--;
-	str = malloc(sizeof(char) * (end - start + 2));
+	str = malloc(sizeof(char) * (end - start + 1));
 	if (!str)
 		return (NULL);
 	i = 0;
-	while (start <= end)
+	while (start < end)
 		str[i++] = s1[start++];
 	str[i] = '\0';
 	return (str);
