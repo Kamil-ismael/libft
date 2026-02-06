@@ -38,7 +38,8 @@ SRC     = ft_isdigit.c \
           ft_putnbr_fd.c \
           ft_lstnew.c \
           ft_lstadd_front.c \
-          ft_lstsize.c
+          ft_lstsize.c \
+          ft_lstlast.c
 
 OBJ     = $(SRC:.c=.o)
 HEAD    = libft.h

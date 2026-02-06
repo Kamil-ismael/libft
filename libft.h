@@ -60,4 +60,5 @@ int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_lstsize(t_list *lst);
 int		ft_atoi(const char *nptr);
 t_list	*ft_lstnew(void *content);
+t_list	*ft_lstlast(t_list *lst);
 #endif
