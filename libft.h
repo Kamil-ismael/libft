@@ -6,7 +6,7 @@
 /*   By: tkamil-h <tkamil-h@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 16:38:49 by tkamil-h          #+#    #+#             */
-/*   Updated: 2026/02/06 11:56:01 by tkamil-h         ###   ########.fr       */
+/*   Updated: 2026/02/06 12:12:57 by tkamil-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 
 # include <stddef.h>
 # include <stdlib.h>
+# include <unistd.h>
 
 int		ft_isdigit(int c);
 int		ft_isalpha(int c);
