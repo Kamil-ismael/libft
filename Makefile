@@ -35,7 +35,8 @@ SRC     = ft_isdigit.c \
           ft_putchar_fd.c \
           ft_putstr_fd.c \
           ft_putendl_fd.c \
-          ft_putnbr_fd.c
+          ft_putnbr_fd.c \
+          ft_lstnew.c
 
 OBJ     = $(SRC:.c=.o)
 HEAD    = libft.h

@@ -6,7 +6,7 @@
 /*   By: tkamil-h <tkamil-h@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/20 16:38:49 by tkamil-h          #+#    #+#             */
-/*   Updated: 2026/02/06 12:12:57 by tkamil-h         ###   ########.fr       */
+/*   Updated: 2026/02/06 13:58:19 by tkamil-h         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,12 @@
 # include <stddef.h>
 # include <stdlib.h>
 # include <unistd.h>
+
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
 
 int		ft_isdigit(int c);
 int		ft_isalpha(int c);
@@ -51,4 +57,5 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_atoi(const char *nptr);
+t_list	*ft_lstnew(void *content);
 #endif
