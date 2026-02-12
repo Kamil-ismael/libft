@@ -1,4 +1,4 @@
-*This project has been created as part of the 42 curriculum by [tkamil-h].*
+*This project has been created as part of the 42 curriculum by tkamil-h.*
 
 # Libft - A Custom C Standard Library
 
@@ -32,7 +32,6 @@ A set of functions to manipulate a custom linked list structure (`t_list`):
 ### Compilation
 The project includes a **Makefile** with the following rules:
 *   `make` : Compiles the standard part of the library.
-*   `make bonus` : Compiles the library including the linked list functions.
 *   `make clean` : Removes the object files (`.o`).
 *   `make fclean` : Removes object files and the compiled library (`libft.a`).
 *   `make re` : Recompiles the entire project.
@@ -53,11 +52,12 @@ To use the library in your own project:
 ## Resources
 *   [Man pages](https://man7.org) - Official C function documentation.
 *   [C Programming Guide](https://en.cppreference.com) - Reference for data structures and memory.
+*   [OpenClarooms](https://openclassrooms.com/fr/)
+*   [W3Schools](https://www.w3schools.com/)
 
 ### AI Usage
-In this project, Artificial Intelligence was used as a pedagogical partner (Thought Partner) for the following tasks:
+In this project, Artificial Intelligence was used as a pedagogical partner for the following tasks:
 
-*   **Conceptual Visualization:** AI provided visual analogies (like the "train wagon" system for nodes) and ASCII diagrams to help me visualize how linked list pointers (`next`) connect memory blocks.
-*   **Norminette Compliance:** AI assisted in debugging specific syntax errors related to the 42 Norm (such as `SPACE_REPLACE_TAB` and alignment of structure members) and suggested cleaner ways to structure functions like `ft_lstmap` to stay within the 25-line limit.
-*   **Edge Case Analysis:** AI helped identify potential memory leaks in linked list operations, particularly the importance of freeing memory in the correct order when a `malloc` fails during a map or clear operation.
-*   **README Structure:** Assistance in organizing and documenting the project according to the curriculum requirements.
+*   **Documentation:** Assistance in structuring and writing this `README.md` file.
+*   **Norminette Compliance:** Helping to identify and fix specific syntax errors related to the 42 Norm (such as indentation and alignment issues).
+*   **Concept Clarification:** Explaining the behavior of certain functions when the Linux man pages were difficult to understand, using simplified examples and visual analogies.
